@@ -12,3 +12,17 @@ This is an educational project on data cleaning and preparation using SQL. The o
 |    Brock Wooldridge  |41|married|bwooldridge5s@wsj.com|202-601-2814|13 Rowland Center,Washington,District of Columbia|Engineer II|1/21/2022|
 |    CESARO HARDES|53|married|chardesfo@army.mil|760-170-8812|42091 Rutledge Point,San Bernardino,California|Senior Developer|7/17/2012|
 |    Dottie Cribbott|65|divorced|dcribbottmf@rambler.ru|212-113-0379|4890 Bluestem Lane,Brooklyn,New York|Structural Engineer|6/12/2018|
+
+CREATE TABLE club_member_info_cleaned (
+	full_name VARCHAR(50),
+	age INTEGER,
+	martial_status VARCHAR(50),
+	email VARCHAR(50),
+	phone VARCHAR(50),
+	full_address VARCHAR(50),
+	job_title VARCHAR(50),
+	membership_date VARCHAR(50)
+);
+
+INSERT INTO club_member_info_cleaned
+SELECT * FROM club_member_info 
